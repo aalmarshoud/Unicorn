@@ -1,0 +1,39 @@
+﻿@using Unicore.Services.Entities;
+@model Owner
+@{
+    ViewData["Title"] = "AddEditOwnerView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.Id > 0)
+{
+    <h1>Edit</h1>
+}
+else
+{
+    <h1>Add</h1>
+}
+<hr />
+@using (Html.BeginForm("SaveData", "Owners", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.Id)
+<div class="container">
+    <div class="row">
+        @Html.TextBoxFor(x => x.Name, null, new { @class = "form-control col-md-12", @placeholder = "Owner Name" })
+    </div>
+    <div class="row">
+        @Html.TextBoxFor(x => x.Mobile, null, new { @class = "form-control col-md-12", @placeholder = "Mobile" })
+    </div>
+    <div class="row">
+        @Html.TextBoxFor(x => x.Email, null, new { @class = "form-control col-md-12", @placeholder = "Email" })
+    </div>
+    <div class="row">
+        @Html.TextBoxFor(x => x.Address, null, new { @class = "form-control col-md-12", @placeholder = "Address" })
+    </div>
+    <br />
+    <div class="row">
+        <button type="submit" class="btn btn-success col-md-3">Submit</button>
+        <a href="@Url.Action("Index")" class="btn btn-primary col-md-3 offset-1">Cancel</a>
+    </div>
+</div>
+}

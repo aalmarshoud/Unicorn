@@ -1,0 +1,12 @@
+C:\Users\admin\Desktop\UnicorFarm\Unicore.Services\bin\Debug\netcoreapp3.1\Unicore.Services.deps.json
+C:\Users\admin\Desktop\UnicorFarm\Unicore.Services\bin\Debug\netcoreapp3.1\Unicore.Services.runtimeconfig.json
+C:\Users\admin\Desktop\UnicorFarm\Unicore.Services\bin\Debug\netcoreapp3.1\Unicore.Services.runtimeconfig.dev.json
+C:\Users\admin\Desktop\UnicorFarm\Unicore.Services\bin\Debug\netcoreapp3.1\Unicore.Services.dll
+C:\Users\admin\Desktop\UnicorFarm\Unicore.Services\bin\Debug\netcoreapp3.1\Unicore.Services.pdb
+C:\Users\admin\Desktop\UnicorFarm\Unicore.Services\obj\Debug\netcoreapp3.1\Unicore.Services.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\UnicorFarm\Unicore.Services\obj\Debug\netcoreapp3.1\Unicore.Services.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\UnicorFarm\Unicore.Services\obj\Debug\netcoreapp3.1\Unicore.Services.AssemblyInfo.cs
+C:\Users\admin\Desktop\UnicorFarm\Unicore.Services\obj\Debug\netcoreapp3.1\Unicore.Services.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\UnicorFarm\Unicore.Services\obj\Debug\netcoreapp3.1\Unicore.Services.dll
+C:\Users\admin\Desktop\UnicorFarm\Unicore.Services\obj\Debug\netcoreapp3.1\Unicore.Services.pdb
+C:\Users\admin\Desktop\UnicorFarm\Unicore.Services\obj\Debug\netcoreapp3.1\Unicore.Services.genruntimeconfig.cache

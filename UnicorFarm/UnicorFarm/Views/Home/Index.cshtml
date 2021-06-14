@@ -1,0 +1,37 @@
+﻿@using Unicore.Services.Dtos;
+@model List<UnicoreInfoVM> 
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<h1>Unicore Farm Information</h1>
+<hr />
+<a href="@Url.Action("AddEditUnicorView")" class="btn btn-success">Add</a>
+<table class="table table-light">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Unicore Name</th>
+            <th>Unicore Desc</th>
+            <th>Owner Name</th>
+            <th>Mobile</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.UnicoreName</td>
+            <td>@item.UnicoreDescription</td>
+            <td>@item.OwnerName</td>
+            <td>@item.Mobile</td>
+            <td><a href="@Url.Action("AddEditUnicorView")?id=@item.ID" class="btn btn-primary">Edit</a>
+                <a href="@Url.Action("Detele")?id=@item.ID" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

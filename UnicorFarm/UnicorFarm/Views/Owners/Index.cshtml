@@ -1,0 +1,38 @@
+﻿@using Unicore.Services.Entities;
+@model List<Owner>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Owners Information</h1>
+<hr />
+<a href="@Url.Action("AddEditOwnerView")" class="btn btn-success">Add</a>
+<table class="table table-light">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Owner Name</th>
+            <th>Mobile</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Mobile</td>
+            <td>@item.Email</td>
+            <td>@item.Address</td>
+            <td>
+                <a href="@Url.Action("AddEditOwnerView")?id=@item.Id" class="btn btn-primary">Edit</a>
+                <a href="@Url.Action("Delete")?id=@item.Id" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

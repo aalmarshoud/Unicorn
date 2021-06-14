@@ -1,0 +1,36 @@
+﻿@using Unicore.Services.Dtos;
+@model UnicoreInfoVM
+@{
+    ViewData["Title"] = "AddEditUnicorView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.ID > 0)
+{
+    <h1>Edit</h1>
+}
+else
+{
+    <h1>Add</h1>
+}
+<hr />
+@using (Html.BeginForm("SaveData", "Home",FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.ID)
+    <div class="container">
+        <div class="row">
+            @Html.TextBoxFor(x => x.UnicoreName, null, new { @class = "form-control col-md-12", @placeholder = "Unicore Name" })
+        </div>
+        <div class="row">
+            @Html.TextBoxFor(x => x.UnicoreDescription, null, new { @class = "form-control col-md-12", @placeholder = "Unicore Description" })
+        </div>
+        <div class="row">
+            @Html.DropDownListFor(x => x.OwnerId,new SelectList(ViewBag.Owners,"Value","Text"), "select Owner",new {@class="form-control col-md-12" })
+        </div>
+        <br />
+        <div class="row">
+            <button type="submit" class="btn btn-success col-md-3">Submit</button>
+            <a href="@Url.Action("Index")" class="btn btn-primary col-md-3 offset-1">Cancel</a>
+        </div>
+    </div>
+}
